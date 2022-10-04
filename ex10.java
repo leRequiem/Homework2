@@ -6,7 +6,7 @@ class ex10 {
         int num = in.nextInt();
         String[] array = new String[num];
 
-        System.out.println("Введите строки самого массива: ");
+        System.out.println("Введите строки массива: ");
         for (int i = 0; i < num; i++) {
             array[i] = in.nextLine();
         }
