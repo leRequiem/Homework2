@@ -4,9 +4,9 @@ class ex10 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите количество элементов в массиве: ");
         int num = in.nextInt();
-        String[] array = new String[num];
+        String[] array = new String[num+1];
 
-        System.out.println("Введите строки массива: ");
+        System.out.println("Введите строки самого массива: ");
         for (int i = 0; i < num; i++) {
             array[i] = in.nextLine();
         }
