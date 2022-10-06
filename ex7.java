@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class ex7{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -9,6 +10,7 @@ class ex7{
 
         for (int i = 0; i < num; i++) {
             array[i] = in.nextInt();
+            System.out.println(Arrays.toString(array));
         }
 
         for (int i = 0; i < array.length - 1; i++) {
@@ -16,12 +18,12 @@ class ex7{
                 counter += 1;
             } else {
                 maximum = Math.max(maximum, counter);
-                counter = 0;
+                counter = 1;
             }
         }
         if (maximum == 3){
             System.out.println("Они существуют!");
         }
-        else System.out.println("Такой последовательноти не существует");
+        else System.out.println("Такой последовательности не существует");
     }
 }
